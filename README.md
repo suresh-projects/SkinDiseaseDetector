@@ -36,4 +36,4 @@ HAM10000 - Human Against Machine Skin Lesion Dataset
 - Improved model accuracy
 
 ## 👨‍💻 Developed By
-Suresh S
+Suresh S & Vasanthapriyan M
