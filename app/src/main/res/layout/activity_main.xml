@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FAFB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <!-- App Title -->
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skin Disease Detector"
+            android:textSize="22sp"
+            android:textColor="#1E3A8A"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/subTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI-powered disease detection &amp; care guidance"
+            android:textSize="14sp"
+            android:textColor="#6B7280"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Image Preview -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:background="@drawable/image_placeholder"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="Selected Image" />
+
+        <!-- Button Row: Pick Image and Capture -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/btnPick"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="Pick Image"
+                android:textAllCaps="false"
+                android:backgroundTint="#A78BFA"
+                android:textColor="#FFFFFF"
+                android:drawableStart="@drawable/ic_folder"
+                android:drawablePadding="6dp" />
+
+            <Button
+                android:id="@+id/btnCapture"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Capture"
+                android:textAllCaps="false"
+                android:backgroundTint="#A78BFA"
+                android:textColor="#FFFFFF"
+                android:drawableStart="@drawable/ic_camera"
+                android:drawablePadding="6dp" />
+        </LinearLayout>
+
+        <!-- Predict Button -->
+        <Button
+            android:id="@+id/btnPredict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Predict Disease"
+            android:textAllCaps="false"
+            android:backgroundTint="#10B981"
+            android:textColor="#FFFFFF"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="6dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Prediction Results Card -->
+        <LinearLayout
+            android:id="@+id/resultLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/card_background"
+            android:elevation="3dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prediction result will appear here"
+                android:textColor="#111827"
+                android:textSize="15sp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Find Nearby Dermatologists -->
+        <Button
+            android:id="@+id/btnFindDerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Find Nearby Dermatologists"
+            android:textAllCaps="false"
+            android:backgroundTint="#2563EB"
+            android:textColor="#FFFFFF"
+            android:drawableStart="@drawable/ic_location"
+            android:drawablePadding="6dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="30dp" />
+
+    </LinearLayout>
+</ScrollView>

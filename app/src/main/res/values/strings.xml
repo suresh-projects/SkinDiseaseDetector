@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Skin Disease Detector</string>
+    <string name="image_preview">Selected Image Preview</string>
+    <string name="pick_image">📁 Pick Image</string>
+    <string name="capture_image">📸 Capture</string>
+    <string name="predict_disease">🔍 Predict Disease</string>
+    <string name="find_dermatologists">📍 Find Nearby Dermatologists</string>
+    <string name="prediction_placeholder">Prediction result will appear here</string>
+    <string name="back_button_desc">Back</string>
+    <string name="back_button">Back Button</string>
+    <string name="nearby_dermatologists">Nearby Dermatologists</string>
+
+</resources>
